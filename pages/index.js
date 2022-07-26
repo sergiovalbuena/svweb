@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 
 
@@ -13,9 +14,12 @@ export default function Home() {
       </Head>
 
       <HeroSection />
+
+
       <div id="work">
         Work
       </div>
+      <Footer/>
       
     </div>
   )

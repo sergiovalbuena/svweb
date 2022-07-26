@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function HeroSection() {
   return (
     <div className="Wrapper">
@@ -8,10 +10,9 @@ export default function HeroSection() {
             Hi 👋🏼, I am a<br /> <span>UX Designer and Frontend Dev👨🏻‍💻.</span>
           </h1>
           <p className="Description">
-            UX Designer and Frontend Developer👨🏻‍💻.
-            <br />
             Creating awesome experiences and amazing products.
           </p>
+          <Button />
         </div>
       </div>
 
@@ -30,15 +31,14 @@ export default function HeroSection() {
           grid-template-columns: 360px auto;
 
           //change columns per row in mobile size:
-  
         }
-        @media (max-width: 450px){
-        .ContentWrapper{
+        @media (max-width: 450px) {
+          .ContentWrapper {
             grid-template-columns: auto;
             gap: 60px;
             padding: 150px 20px 250px;
           }
-          .Title{
+          .Title {
             font-size: 48px;
           }
         }
@@ -47,8 +47,7 @@ export default function HeroSection() {
           max-width: 360px;
           display: grid;
           gap: 10px;
-          
-         
+
           > * {
             opacity: 0;
           }
@@ -63,11 +62,11 @@ export default function HeroSection() {
         }
 
         span {
-            /* background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%); */
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: red;
-          }
+          /* background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%); */
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: red;
+        }
 
         .Description {
           font-size: 16px;

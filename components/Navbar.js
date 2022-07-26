@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import MenuTooltip from './MenuTooltip'
+
 
 
 const menuData = [
@@ -21,9 +21,12 @@ const menuData = [
   }]
 
 export default function Navbar() {
+  
   return (
     <div className='Wrapper'>
+      <Link href='/'>
       <h3 className='LogoName'>Sergio Valbuena</h3>
+      </Link>
       <div></div>
       <div className='MenuWrapper' count={menuData.length}>
         {menuData.map((item, index) => (
@@ -37,7 +40,7 @@ export default function Navbar() {
           </div>
       ))}
       </div>
-      <MenuTooltip/>
+     
 
 
       <style jsx>{`
