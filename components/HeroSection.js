@@ -10,7 +10,9 @@ export default function HeroSection() {
             Hi 👋🏼, I am a<br /> <span>UX Designer and Frontend Dev👨🏻‍💻.</span>
           </h1>
           <p className="Description">
-            Creating awesome experiences and amazing products.
+            Creating awesome experiences😎, <br />
+            amazing products🦄 , <br/>
+            giving flow to the user 🏄🏻‍♂️.
           </p>
           <Button />
         </div>
@@ -23,7 +25,7 @@ export default function HeroSection() {
           overflow: hidden;
         }
         .ContentWrapper {
-          max-width: 1294px;
+          max-width: 1200px;
           height: 750px;
           margin: 0 auto;
           padding: 200px 40px;
@@ -62,14 +64,14 @@ export default function HeroSection() {
         }
 
         span {
-          /* background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%); */
+          background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%);
           background-clip: text;
           -webkit-background-clip: text;
           color: red;
         }
 
         .Description {
-          font-size: 16px;
+          
           font-weight: 600;
         }
       `}</style>

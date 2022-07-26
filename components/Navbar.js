@@ -10,12 +10,12 @@ const menuData = [
     link:"/#work",
 },
   {
-    title: 'Tutorial',
+    title: 'About me',
     icon: '../public/logos/book.svg',
     link:"/",
   },
   {
-    title: 'About me',
+    title: 'Contact me',
     icon: '/public/logos/code.svg',
     link:"/",
   }]
@@ -34,7 +34,7 @@ export default function Navbar() {
         <Link href={item.link} key={index}>
           {/* <img src={item.icon} alt={item.title} >
             </img> */}
-          <p >{item.title}</p>
+          <a >{item.title}</a>
         
           </Link>
           </div>
@@ -46,13 +46,17 @@ export default function Navbar() {
       <style jsx>{`
       .Wrapper{
         position:absolute;
-        top: 3rem;
+        
         display:grid;
         grid-template-columns: 25% 35% 40%;
         width:100%;
         justify-content: space-between;
         padding: 0 4rem;
         align-items: center;
+
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.2);
+
       }
       .MenuWrapper{
         display: grid;
@@ -90,6 +94,10 @@ export default function Navbar() {
         background: black;
         color: var(--cyan);
         font-weight:bold;
+       }
+       .Wrapper{
+        box-shadow: 0px 50px 100px rgba(200, 200, 200, 0.2),
+    inset 0 0 0 0.5px rgba(0, 0, 0, 0.2);
        }
       }
 

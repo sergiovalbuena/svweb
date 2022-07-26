@@ -17,7 +17,7 @@ export default function Home() {
 
 
       <div id="work">
-        Work
+        <h2>Work</h2> 
       </div>
       <Footer/>
       

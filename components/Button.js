@@ -5,7 +5,7 @@ export default function Button() {
     <div>
       <button>
 
-      Button
+      Say hello ✉️
       </button>
     
       <style jsx>{`
@@ -16,6 +16,7 @@ export default function Button() {
         cursor:pointer;
         margin-top: 2rem;
         transition: .5s ease-out;
+        font-size: 1.6rem;
       }
       button:hover{
         padding:1.2rem 6rem;
@@ -24,6 +25,7 @@ export default function Button() {
       @media(prefers-color-scheme: dark){
       button{
           border: .5px;
+          
         }
       }
       `}</style>
