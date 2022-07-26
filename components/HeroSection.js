@@ -5,7 +5,7 @@ export default function HeroSection() {
       <div className="ContentWrapper">
         <div className="TextWrapper">
           <h1 className="Title">
-            Hi 👋🏼, I am <br /> <span>UX Designer and Frontend Developer👨🏻‍💻.</span>
+            Hi 👋🏼, I am a<br /> <span>UX Designer and Frontend Dev👨🏻‍💻.</span>
           </h1>
           <p className="Description">
             UX Designer and Frontend Developer👨🏻‍💻.

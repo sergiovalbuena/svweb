@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className='MenuWrapper' count={menuData.length}>
         {menuData.map((item, index) => (
           <div className='MenuItem'>
-        <Link href={item.link} key={index} >
+        <Link href={item.link} key={index}>
           {/* <img src={item.icon} alt={item.title} >
             </img> */}
           <p >{item.title}</p>
