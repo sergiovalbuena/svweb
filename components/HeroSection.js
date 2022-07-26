@@ -5,7 +5,7 @@ export default function HeroSection() {
       <div className="ContentWrapper">
         <div className="TextWrapper">
           <h1 className="Title">
-            Hi 👋🏼, I am <br /> <span>Sergio</span>
+            Hi 👋🏼, I am <br /> <span>UX Designer and Frontend Developer👨🏻‍💻.</span>
           </h1>
           <p className="Description">
             UX Designer and Frontend Developer👨🏻‍💻.
@@ -25,7 +25,7 @@ export default function HeroSection() {
           max-width: 1294px;
           height: 750px;
           margin: 0 auto;
-          padding: 200px 30px;
+          padding: 200px 40px;
           display: grid;
           grid-template-columns: 360px auto;
 
