@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,17 +7,17 @@ import React from 'react'
 const menuData = [
   {
   title: 'Work',
-  icon: '/favicon.svg',
+  icon: '/code.svg',
     link:"/#work",
 },
   {
     title: 'About me',
-    icon: '../public/logos/book.svg',
+    icon: '/book.svg',
     link:"/#about",
   },
   {
     title: 'Contact me',
-    icon: '/public/logos/code.svg',
+    icon: '/livestreams.svg',
     link:"/#Contact",
   }]
 
@@ -31,11 +32,14 @@ export default function Navbar() {
       <div className='MenuWrapper' count={menuData.length}>
         {menuData.map((item, index) => (
           <div className='MenuItem' key={index}>
-        <Link href={item.link} key={index}>
-          {/* <img src={item.icon} alt={item.title} >
-            </img> */}
-          <a className='Boton'>{item.title}</a>
-        
+            <Link href={item.link} key={index}>
+              <>
+                <Image src={item.icon} alt={item.title}  width={20}
+      height={20}
+                layout="fixed">
+            </Image> 
+          <ol className='Boton'>{item.title}</ol>
+          </>
           </Link>
           </div>
       ))}
@@ -67,10 +71,14 @@ export default function Navbar() {
         grid-template-columns: repeat(3, auto);
       
       }
+      ol{
+        font-size:1.2rem;
+      }
       .MenuItem{
         display: grid;
         align-items: center;
         padding:  .2rem ;
+        grid-template-columns:20% 80%;
         justify-items: center;
       }
       .MenuItem:hover{
