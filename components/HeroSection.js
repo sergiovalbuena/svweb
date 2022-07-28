@@ -26,7 +26,8 @@ export default function HeroSection() {
            overflow: hidden;
         }
         .ContentWrapper {
-          max-width: 1200px;
+          /* max-width: 1200px; */
+          width:100%;
           height: 750px;
           margin: 0 auto;
           padding: 200px 40px;

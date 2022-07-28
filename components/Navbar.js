@@ -23,7 +23,7 @@ const menuData = [
 export default function Navbar() {
   
   return (
-    <div className='Wrapper'>
+    <nav className='Wrapper'>
       <Link href='/'>
       <h3 className='LogoName'>Sergio Valbuena</h3>
       </Link>
@@ -106,6 +106,6 @@ export default function Navbar() {
 
 
       `}</style>
-    </div>
+    </nav>
   )
 }

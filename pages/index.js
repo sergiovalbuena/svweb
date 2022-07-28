@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import Work from '../components/Work'
@@ -16,6 +17,15 @@ export default function Home() {
 
       <HeroSection />
 
+
+      <Link href="https://www.google.com">
+        <div>
+          
+        <button>
+      google    
+      </button>
+        </div>
+       </Link>
 
       <div id="work">
         
