@@ -3,7 +3,6 @@ import Button from "./Button";
 export default function HeroSection() {
   return (
     <div className="Wrapper">
-      <div className="WaveGround" />
       <div className="ContentWrapper">
         <div className="TextWrapper">
           <h1 className="Title">
@@ -24,7 +23,7 @@ export default function HeroSection() {
         .Wrapper {
           /* background: linear-gradient(180deg, #4316db 0%, #9076e7 100%); */
           /* background: var(--light) ; */
-          overflow: hidden;
+           overflow: hidden;
         }
         .ContentWrapper {
           max-width: 1200px;
@@ -51,10 +50,15 @@ export default function HeroSection() {
           max-width: 360px;
           display: grid;
           gap: 10px;
+          transition: 1s;
 
           > * {
             opacity: 0;
           }
+        }
+        .TextWrapper:hover{
+          opacity:1;
+          transform: translateY(-10px);
         }
         .Title {
           font-weight: bold;
@@ -64,6 +68,7 @@ export default function HeroSection() {
           -webkit-background-clip: text;
           color: transparent;
         }
+   
 
         span {
           background: linear-gradient(180deg, #ffd7ff 0%, #ffb6ff 100%);

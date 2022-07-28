@@ -21,6 +21,7 @@ export default function ButtonBorder(props) {
         color: white;
         font-weight: bold;
         color: var(--cyan);
+        background-color:none;
         
       }
       button:hover{

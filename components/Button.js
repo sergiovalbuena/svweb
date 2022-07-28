@@ -15,11 +15,11 @@ export default function Button(props) {
         border: .5px solid;
         cursor:pointer;
         margin-top: 2rem;
-        transition: .5s ease-out;
         font-size: 1.6rem;
         background: var(--cyan);
         color: white;
         font-weight: bold;
+        transition: .5s ease-out;
         
       }
       button:hover{

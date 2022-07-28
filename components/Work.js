@@ -9,7 +9,7 @@ export default function Work(props) {
         <ProjectCard
           title="Primer Projecto"
           text="Este es el primer proyecto, ayudo a solucionar x cosa en x lado"
-          
+          image='/public/screenShots/asanas.png'
           
         />
       </div>
