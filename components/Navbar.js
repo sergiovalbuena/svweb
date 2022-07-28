@@ -18,7 +18,7 @@ const menuData = [
   {
     title: 'Contact me',
     icon: '/livestreams.svg',
-    link:"/#Contact",
+    link:"/#contact",
   }]
 
 export default function Navbar() {
@@ -34,10 +34,13 @@ export default function Navbar() {
           <div className='MenuItem' key={index}>
             <Link href={item.link} key={index}>
               <>
+                <div className="Icono">
+                  
                 <Image src={item.icon} alt={item.title}  width={20}
       height={20}
-                layout="fixed">
+      layout="fixed">
             </Image> 
+                  </div>
           <ol className='Boton'>{item.title}</ol>
           </>
           </Link>
@@ -69,7 +72,7 @@ export default function Navbar() {
         display: grid;
         gap:2rem;
         grid-template-columns: repeat(3, auto);
-      
+      justify-content: center;
       }
       ol{
         font-size:1.2rem;
@@ -77,8 +80,8 @@ export default function Navbar() {
       .MenuItem{
         display: grid;
         align-items: center;
-        padding:  .2rem ;
-        grid-template-columns:20% 80%;
+        padding: 0 20px ;
+        grid-template-columns:15% 85%;
         justify-items: center;
       }
       .MenuItem:hover{
@@ -91,7 +94,11 @@ export default function Navbar() {
       .LogoName:hover{
         color:var(--cyan);
       }
-
+      .Icono{
+        background:var(--dark) ;
+        border-radius:5px;
+        padding: 1px;
+      }
 
       @media(max-width:450px){
         .Wrapper{
@@ -110,6 +117,11 @@ export default function Navbar() {
         box-shadow: 0px 50px 100px rgba(200, 200, 200, 0.12),
     inset 0 0 0 0.5px rgba(0, 0, 0, 0.2);
        }
+       .Icono{
+        background:none ;
+        border-radius:5px;
+        padding: 1px;
+      }
       }
 
 

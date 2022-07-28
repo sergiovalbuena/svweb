@@ -1,36 +1,54 @@
 import React from "react";
 import Link from "next/link";
 import ButtonBorder from "./ButtonBorder";
+import Image from "next/image";
 
 export default function ProjectCard(props) {
   return (
     <div className="Wrapper" src={props.image}>
-      <a href={props.link} target="_blank" rel="noreferrer">
-        <img className="Background" src={props.image} />
 
         <div className="WrapperText">
           <h4 className="Title">{props.title}</h4>
           <p className="Text">{props.text}</p>
-        </div>
-        {/* <div className="WrapperIcons">
-          <img className="Logo" src={props.logo2}></img>
+      </div>
+      <div className="Background">
+      <Image src={props.image} alt={ props.title} width={ props.width } height={ props.height}layout='responsive'/>
+      </div>
+        <div className="WrapperIcons">
           <img className="Logo" src={props.logo1}></img>
+          <img className="Logo" src={props.logo2}></img>
           <img className="Logo" src={props.logo3}></img>
-        </div> */}
-        <ButtonBorder text='visit site' />
+        </div> 
+      <a href={props.link} target="_blank" rel="noreferrer">
+        <div className="ButtonBox">
+        <ButtonBorder text='visit site'/>
+        </div>
       </a>
 
       <style jsx>{`
         .Wrapper {
           width: 300px;
-          height: 369px;
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+          height: 439px;
+          box-shadow: 0 20px 40px rgba(0 , 0, 0, 0.1);
           padding: 15px 20px;
           border-radius:10px;
+          transition: .5s ease-out;
         }
+        .Wrapper:hover{
+          transform: translateY(-17px); 
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+
+
+          
+          
+        }
+        .WrapperText {
+          color: var(--dark);
+        }
+
         .Title{
           font-size:2rem;
-          margin: 0;
+          margin: 15px 0;
           /* font-weight:bold; */
         }
         .Text{
@@ -40,7 +58,41 @@ export default function ProjectCard(props) {
           line-height: 1.6rem;
           
         }
-        
+        .Background{
+          filter: grayscale(.5);
+          transition: .5s ease-out;
+          
+        }
+        .Background:hover{
+          filter: grayscale(0);
+        }
+        .WrapperIcons{
+          margin-top:10px;
+          justify-content: center;
+
+        }
+        .WrapperIcons img{
+          width: 30px;
+          margin:5px;
+        }
+        .ButtonBox{
+          display: inline-grid;
+          justify-content: center;
+        }
+
+
+        @media(prefers-color-scheme: dark){
+          .WrapperText {
+          color: var(--light);
+        }
+        .Wrapper {
+          box-shadow: 0 20px 40px rgba(200, 200, 200, 0.1);
+        }
+        .Wrapper:hover{
+          box-shadow: 0 20px 40px rgba(200, 200, 200, 0.25);
+        }
+        }
+
 
       `}</style>
     </div>
