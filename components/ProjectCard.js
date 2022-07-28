@@ -5,7 +5,7 @@ import ButtonBorder from "./ButtonBorder";
 export default function ProjectCard(props) {
   return (
     <div className="Wrapper" src={props.image}>
-      <a href={props.link} target="_blank">
+      <a href={props.link} target="_blank" rel="noreferrer">
         <img className="Background" src={props.image} />
 
         <div className="WrapperText">
@@ -36,6 +36,9 @@ export default function ProjectCard(props) {
         .Text{
           text-align:left ;
           padding:0px 5px ;
+          font-size: 1.4rem;
+          line-height: 1.6rem;
+          
         }
         
 
