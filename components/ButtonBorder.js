@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Button(props) {
+export default function ButtonBorder(props) {
   return (
     <div>
       <button>
@@ -17,19 +17,20 @@ export default function Button(props) {
         margin-top: 2rem;
         transition: .5s ease-out;
         font-size: 1.6rem;
-        background: var(--cyan);
+        border: solid 1px var(--cyan);
         color: white;
         font-weight: bold;
+        color: var(--cyan);
         
       }
       button:hover{
-        padding:1.2rem 6rem;
+        padding:1rem 6rem;
       }
       
       @media(prefers-color-scheme: dark){
       button{
-          border: none;
-          background-color:var(--cyan);
+          border: solid 1px var(--cyan);
+          background: none;
           color: white;
           
         }

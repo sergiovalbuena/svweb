@@ -12,12 +12,12 @@ const menuData = [
   {
     title: 'About me',
     icon: '../public/logos/book.svg',
-    link:"/",
+    link:"/#about",
   },
   {
     title: 'Contact me',
     icon: '/public/logos/code.svg',
-    link:"/",
+    link:"/#Contact",
   }]
 
 export default function Navbar() {
@@ -34,7 +34,7 @@ export default function Navbar() {
         <Link href={item.link} key={index}>
           {/* <img src={item.icon} alt={item.title} >
             </img> */}
-          <a >{item.title}</a>
+          <a className='Boton'>{item.title}</a>
         
           </Link>
           </div>
@@ -57,6 +57,9 @@ export default function Navbar() {
         box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25),
     inset 0 0 0 0.5px rgba(255, 255, 255, 0.2);
 
+      }
+      .Boton{
+        padding:.8rem ;
       }
       .MenuWrapper{
         display: grid;
@@ -96,7 +99,7 @@ export default function Navbar() {
         font-weight:bold;
        }
        .Wrapper{
-        box-shadow: 0px 50px 100px rgba(200, 200, 200, 0.2),
+        box-shadow: 0px 50px 100px rgba(200, 200, 200, 0.12),
     inset 0 0 0 0.5px rgba(0, 0, 0, 0.2);
        }
       }

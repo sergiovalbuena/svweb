@@ -14,7 +14,9 @@ export default function HeroSection() {
             amazing products🦄 , <br/>
             giving flow to the user 🏄🏻‍♂️.
           </p>
-          <Button />
+          <Button
+          text="Say hello ✉️"
+          />
         </div>
       </div>
 
@@ -71,7 +73,6 @@ export default function HeroSection() {
         }
 
         .Description {
-          
           font-weight: 600;
         }
       `}</style>
