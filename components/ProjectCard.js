@@ -9,7 +9,7 @@ export default function ProjectCard(props) {
 
         <div className="WrapperText">
           <h4 className="Title">{props.title}</h4>
-          <p className="Text">{props.text}</p>
+          {/* <p className="Text">{props.text}</p> */}
       </div>
       <div className="Background">
       <Image src={props.image} alt={ props.title} width={ props.width } height={ props.height}layout='responsive'/>
@@ -24,11 +24,20 @@ export default function ProjectCard(props) {
         <ButtonBorder text='visit site'/>
         </div>
       </a>
+        
+        <div className="GitHubBox">
+        <a href={props.linkGitHub} target="_blank" rel="noreferrer">
+        <h6>
+
+          Visit repo on GitHub
+          </h6>
+        </a>  
+        </div>
 
       <style jsx>{`
         .Wrapper {
           width: 300px;
-          height: 439px;
+          height: 480px;
           box-shadow: 0 20px 40px rgba(0 , 0, 0, 0.1);
           padding: 15px 20px;
           border-radius:10px;
@@ -68,7 +77,9 @@ export default function ProjectCard(props) {
         }
         .WrapperIcons{
           margin-top:10px;
-          justify-content: center;
+          /* justify-content: center; */
+          display: inline-grid;
+          grid-template-columns: 1fr 1fr;
 
         }
         .WrapperIcons img{
@@ -76,8 +87,17 @@ export default function ProjectCard(props) {
           margin:5px;
         }
         .ButtonBox{
-          display: inline-grid;
+          display: grid;
           justify-content: center;
+        }
+        .GitHubBox{
+          display: grid;
+          justify-content: center;
+         opacity: .6; 
+        }
+
+        h6{
+          margin: 15px;
         }
 
 
