@@ -68,7 +68,7 @@ export default function ProjectCard(props) {
           
         }
         .Background{
-          filter: grayscale(.5);
+          filter: grayscale(.8);
           transition: .5s ease-out;
           
         }
@@ -94,6 +94,10 @@ export default function ProjectCard(props) {
           display: grid;
           justify-content: center;
          opacity: .6; 
+        }
+        .GitHubBox:hover{
+          color: var(--cyan);
+          opacity: 1;
         }
 
         h6{
