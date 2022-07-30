@@ -114,6 +114,7 @@ export default function Work(props) {
 
       <style jsx>{`
         .ContainerWrapper {
+          width: 100%;
         }
         .CardWrapper {
           padding: 10px 20px;
