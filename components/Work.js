@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 export default function Work(props) {
   return (
     <div className="ContainerWrapper">
-      <h2>Work</h2>
+      <h2>Here is some of my work.</h2>
       <div className="CardWrapper">
         <div>
           <ProjectCard

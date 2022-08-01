@@ -69,6 +69,7 @@ export default function Navbar() {
         padding:.8rem ;
       }
       .MenuWrapper{
+        display:block ;
         display: grid;
         gap:2rem;
         grid-template-columns: repeat(3, auto);
@@ -103,6 +104,16 @@ export default function Navbar() {
       @media(max-width:450px){
         .Wrapper{
           padding: 0 2rem;
+          width: 100%;
+        }
+        .MenuWrapper{
+        display:none;
+       }
+      }
+
+      @media(max-width:790px){
+        .MenuWrapper{
+          display:none;
         }
       }
 
@@ -116,7 +127,9 @@ export default function Navbar() {
        .Wrapper{
         box-shadow: 0px 50px 100px rgba(200, 200, 200, 0.12),
     inset 0 0 0 0.5px rgba(0, 0, 0, 0.2);
+    
        }
+   
        .Icono{
         background:none ;
         border-radius:5px;
