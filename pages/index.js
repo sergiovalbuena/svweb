@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import Work from '../components/Work'
+import WorkWIth from '../components/WorkWIth'
 
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       <div id="work">
         
         <Work/>
-        
+        <WorkWIth />
       </div>
       <Footer/>
       

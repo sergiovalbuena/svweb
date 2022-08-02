@@ -28,17 +28,25 @@ export default function Footer() {
       footer{
         height:300px;
         width:100%;
-        margin: 2rem;
+        margin: 0rem;
         display: grid;
+        background: white;
       }
       .Wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin:2rem;
       }
       .Container{
         display: grid;
         justify-items: center;
         grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @media(prefers-color-scheme: dark){
+        .footer{
+          background: black;
+        }
       }
       
       `}</style>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProjectCard(props) {
   return (
-    <div className="Wrapper" src={props.image}>
+    <div className="Wrapper">
 
         <div className="WrapperText">
           <h4 className="Title">{props.title}</h4>
