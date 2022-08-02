@@ -44,7 +44,7 @@ export default function Footer() {
       }
 
       @media(prefers-color-scheme: dark){
-        .footer{
+        footer{
           background: black;
         }
       }
