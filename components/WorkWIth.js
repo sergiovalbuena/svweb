@@ -13,11 +13,14 @@ export default function WorkWIth() {
       <CodeCard logo='/logos/csharp-logo.svg' codeName='C #'/>
       <CodeCard logo='/logos/unity-logo.svg' codeName='Unity'/>
       <CodeCard logo='/logos/terminal-logo.svg' codeName='Shell'/>
+      <CodeCard logo='/logos/nextjs-logo.svg' codeName='Next.JS'/>
       <CodeCard logo='/logos/firebase-logo.svg' codeName='Firebase'/>
       <CodeCard logo='/logos/Arduino-logo.svg' codeName='Arduino'/>
       <CodeCard logo='/logos/nodejs-logo.svg' codeName='Node JS'/>
       <CodeCard logo='/logos/xd-logo.svg' codeName='AdobeXD'/>
-      <CodeCard logo='/logos/mongo-logo.svg' codeName='Mongo'/>
+      <CodeCard logo='/logos/mongo-logo.svg' codeName='Mongo DB'/>
+      <CodeCard logo='/logos/illustrator-logo.svg' codeName='Illustrator'/>
+      <CodeCard logo='/logos/photoshop-logo.svg' codeName='Photoshop'/>
       <CodeCard logo='/logos/ae-logo.svg' codeName='After Effects'/>
       </div>
 
@@ -33,8 +36,8 @@ export default function WorkWIth() {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin: 10px;
-        
+       
+        padding: 0 40px 0 20px ;
       }
   
       `}</style>
