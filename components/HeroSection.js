@@ -7,8 +7,9 @@ export default function HeroSection() {
       <div className="ContentWrapper">
         <div className="TextWrapper">
           <h1 className="Title">
-            Hi 👋🏼, I am a<br /> <span>UX Designer and Frontend Dev👨🏻‍💻.</span>
+            Hi 👋🏼 , I am<br /> <span>Product Designer and Interactive Dev👨🏻‍💻.</span>
           </h1>
+          <h3>In love ❣️ with UX and Frontend.</h3>
           <p className="Description">
             Creating awesome experiences😎, <br />
             amazing products🦄 , <br/>
@@ -35,6 +36,9 @@ export default function HeroSection() {
           grid-template-columns: 360px auto;
 
           //change columns per row in mobile size:
+        }
+        h3{
+          margin: 0px;
         }
         @media (max-width: 450px) {
           .ContentWrapper {

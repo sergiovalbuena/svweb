@@ -30,6 +30,7 @@ export default function CodeCard(props) {
           justify-content: center;
           align-items: center;
           padding:8px 0 ;
+          transition: 0.8s;
           
           
         }
