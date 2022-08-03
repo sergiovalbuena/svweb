@@ -17,7 +17,7 @@ export default function AboutMe() {
    
       <style jsx>{`
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 
       .Wrapper{
         width: 100%;
@@ -26,14 +26,15 @@ export default function AboutMe() {
       }
       .Wrapper p{
         padding:  0 30px 0 10px;
-        font-family: 'Nanum Pen Script', cursive;
-        font-size: 2rem
+        //font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 1.6rem;
+        
       }
 
       .Wrapper p a{
-        font-family: 'Nanum Pen Script', cursive;
-        font-size: 2rem;
-        text-decoration: underline;
+        //font-family: font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 1.6rem;
+        font-weight:600;
       }
       span{
         font-size:2rem;

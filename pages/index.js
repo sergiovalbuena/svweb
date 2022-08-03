@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import AboutMe from '../components/AboutMe'
+import ContactMe from '../components/ContactMe'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import Work from '../components/Work'
@@ -26,6 +27,7 @@ export default function Home() {
       </div>
 
       <AboutMe />
+      <ContactMe />
       <Footer/>
       
     </div>

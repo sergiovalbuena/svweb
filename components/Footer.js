@@ -31,21 +31,34 @@ export default function Footer() {
         margin: 0rem;
         display: grid;
         background: white;
+        
       }
       .Wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
         margin:2rem;
       }
       .Container{
         display: grid;
         justify-items: center;
+        align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
+      }
+      .Container div{
+        padding: 10px;
       }
 
       @media(prefers-color-scheme: dark){
         footer{
           background: black;
+        }
+      }
+
+      @media(max-width:700px){
+        .Wrapper{
+          grid-template-columns: 1fr;
         }
       }
       
