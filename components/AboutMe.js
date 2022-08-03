@@ -28,7 +28,11 @@ export default function AboutMe() {
         padding:  0 30px 0 10px;
         //font-family: 'Mouse Memoirs', sans-serif;
         font-size: 1.6rem;
+        opacity: .6;
         
+      }
+      .Wrapper p:hover{
+        opacity: 1;
       }
 
       .Wrapper p a{
