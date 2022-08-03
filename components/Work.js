@@ -29,7 +29,8 @@ export default function Work(props) {
             width="300"
             height="240"
             logo1="/logos/js-logo.svg"
-            logo2="/logos/react-logo.svg"
+            logo2="/logos/vite-logo.svg"
+            
           />
         </div>
         <div>
@@ -55,7 +56,7 @@ export default function Work(props) {
             width="300"
             height="240"
             logo1="/logos/figma-logo.svg"
-            logo2="/logos/react-logo.svg"
+            logo2="/logos/js-logo.svg"
           />
         </div>
         <div>
@@ -68,7 +69,7 @@ export default function Work(props) {
             width="300"
             height="240"
             logo1="/logos/figma-logo.svg"
-            logo2="/logos/js-logo.svg"
+            logo2="/logos/vuejs-logo.svg"
           />
         </div>
         <div>
