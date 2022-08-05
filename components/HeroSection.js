@@ -1,4 +1,5 @@
 import Button from "./Button";
+import MockupAnimation from "./MockupAnimation";
 
 export default function HeroSection() {
   return (
@@ -15,10 +16,16 @@ export default function HeroSection() {
             amazing products🦄 , <br/>
             giving flow to the user 🏄🏻‍♂️.
           </p>
+          <a href='mailto:yosergio.valbuena@google.com ' target="_blank" rel="noreferrer">
+
+
           <Button
-          text="Say hello ✉️"
-          />
+            text="Say hello ✉️"
+            />
+ 
+            </a>
         </div>
+        <MockupAnimation/>
       </div>
 
       <style jsx>{`

@@ -6,19 +6,23 @@ export default function Work(props) {
     <div className="ContainerWrapper">
       <h2>Here is some of my work.</h2>
       <div className="CardWrapper">
+
+
         <div>
           <ProjectCard
-            title="Asanas Yoga 🧘🏼‍♀️"
-            text="The beta version, with svg animation and cool hovers"
-            link="https://yogananda.netlify.app/"
+            title="CRUD Firebase"
+            
+            link="https://sergiovalbuena.github.io/tasks-creator-firebase/"
             linkGitHub="https://www.github.com/"
-            image="/screenShots/asanas.png"
+            image="/screenShots/CRUDFirebase.png"
             width="300"
             height="240"
-            logo1="/logos/figma-logo.svg"
-            logo2="/logos/react-logo.svg"
+            logo1="/logos/react-logo.svg"
+            logo2="/logos/firebase-logo.svg"
+            
           />
         </div>
+
         <div>
           <ProjectCard
             title="Rick And Morthy - DOM"
@@ -31,6 +35,19 @@ export default function Work(props) {
             logo1="/logos/js-logo.svg"
             logo2="/logos/vite-logo.svg"
             
+          />
+        </div>
+        <div>
+          <ProjectCard
+            title="Asanas Yoga 🧘🏼‍♀️"
+            text="The beta version, with svg animation and cool hovers"
+            link="https://yogananda.netlify.app/"
+            linkGitHub="https://www.github.com/"
+            image="/screenShots/asanas.png"
+            width="300"
+            height="240"
+            logo1="/logos/figma-logo.svg"
+            logo2="/logos/react-logo.svg"
           />
         </div>
         <div>

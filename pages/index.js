@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import AboutMe from '../components/AboutMe'
-import ContactMe from '../components/ContactMe'
-import Footer from '../components/Footer'
-import HeroSection from '../components/HeroSection'
-import Work from '../components/Work'
-import WorkWIth from '../components/WorkWIth'
-
+import Head from "next/head";
+import Image from "next/image";
+import AboutMe from "../components/AboutMe";
+import ContactMe from "../components/ContactMe";
+import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
+import Work from "../components/Work";
+import WorkWIth from "../components/WorkWIth";
 
 export default function Home() {
   return (
@@ -19,17 +18,20 @@ export default function Home() {
 
       <HeroSection />
 
-
       <div id="work">
-        
-        <Work/>
+        <Work />
         <WorkWIth />
       </div>
 
-      <AboutMe />
-      <ContactMe />
-      <Footer/>
-      
+      <div id="about">
+        <AboutMe />
+      </div>
+
+      <div id="contact">
+        <ContactMe />
+      </div>
+
+      <Footer />
     </div>
-  )
+  );
 }
